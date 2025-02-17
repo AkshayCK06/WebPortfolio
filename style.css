@@ -8,7 +8,19 @@ body {
 }
 
 h1, h2 {
-    color: #0062ff;
+    color: #3394ee;
+}
+
+section {
+    max-width: 1200px;      /* Limit the width */
+    margin: 0 auto;         /* Center the section */
+    padding: 20px 35px;     /* Add padding for spacing */
+    text-align: left;     /* Center-align text */
+    opacity: 0;             /* Make sure it's invisible before scrolling */
+    transition: opacity 0.5s ease-in-out;  /* Smooth fade effect */
+}
+section h2{
+    font-size: 30px;
 }
 
 .project-card {
@@ -19,28 +31,74 @@ h1, h2 {
     border-radius: 5px;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: #1e1e1e;
-    padding: 10px 0;
-    text-align: center;
-}
-
+/* Desktop View: Nav items on a single row */
 nav ul {
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap to the next line */
+    justify-content: center;  /* Center the items horizontally */
     padding: 0;
+    margin: 0;
 }
 
+/* Styling for the individual list items */
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    list-style: none;
+    margin: 10px;  /* Add some spacing between items */
 }
 
 nav ul li a {
-    color: #00ccff;
     text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+/* Mobile View: Split into two rows */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around;  /* Distribute items evenly across the rows */
+    }
+
+    nav ul li {
+        flex: 1 1 45%;  /* Make each item take up 45% of the width */
+        text-align: center;
+        margin: 5px;
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+}
+.headerclass{
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style for the profile image */
+.profile-image img {
+    width: 150px;           /* Set the width of the image */
+    height: 150px;          /* Set the height of the image */
+    border-radius: 50%;     /* Make the image circular */
+    object-fit: cover;      /* Ensure the image covers the circular frame */
+    border: 5px solid #000000; /* Optional: Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    margin-bottom: 20px;  /* Space between image and text */
+    justify-content: center;
+
+}
+.aboutmetext {
+    font-size: 1.2em;
+    max-width: 100%;
+    text-align: justify;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+    .profile-image img {
+        width: 120px;  /* Adjust size for smaller screens */
+        height: 120px;
+    }
 }
 
 .project-card {
