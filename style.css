@@ -16,3 +16,52 @@ h1, h2 {
     width: 80%;
     border-radius: 5px;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1e1e1e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+.project-card {
+    background: #1e1e1e;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: #292929;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
