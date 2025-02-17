@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2 {
-    color: #00ccff;
+    color: #0062ff;
 }
 
 .project-card {
@@ -64,4 +64,66 @@ nav ul li a {
         display: block;
         margin: 10px 0;
     }
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #00ccff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+
+.resume-btn {
+    display: inline-block;
+    background: #00ccff;
+    color: #121212;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #0099cc;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #00ccff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    background: #00ccff;
+    color: #121212;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0099cc;
 }

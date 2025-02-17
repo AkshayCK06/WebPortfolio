@@ -10,6 +10,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 <body>
     <nav>
         <ul>
@@ -25,6 +27,8 @@
     </header>
 
     <section id="about" data-aos="fade-up">
+        <a href="assets/Akshay_C_Kashyap_resume.pdf" class="resume-btn" download>Download Resume</a>
+
         <h2>About Me</h2>
         <p>.</p>
     </section>
@@ -38,11 +42,26 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p><a href="https://github.com/your-username">GitHub</a></p>
-    </section>
+        <p>Email: akshayckashyap@gmail.com</p>
+        <div class="social-icons">
+            <a href="https://github.com/akshayck06" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/akshayckashyap" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+    </section>    
 
 </body>
 </html>

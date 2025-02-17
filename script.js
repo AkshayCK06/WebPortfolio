@@ -12,3 +12,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 AOS.init();
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Message sent! (This is a placeholder, integrate a backend later.)");
+});
