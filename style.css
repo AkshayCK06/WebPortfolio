@@ -127,3 +127,53 @@ form button {
 form button:hover {
     background: #0099cc;
 }
+
+
+/* Default is dark mode */
+body {
+    background: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    margin-top: 100px;
+}
+
+h1 span {
+    color: #00ccff;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: #ffffff;
+    color: #121212;
+}
+
+body.light-mode header {
+    background: #f1f1f1;
+}
+
+body.light-mode h1 span {
+    color: #0099cc;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    background: transparent;
+    border: 2px solid #00ccff;
+    color: #00ccff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #00ccff;
+    color: #ffffff;
+}
