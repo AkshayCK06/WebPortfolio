@@ -17,7 +17,8 @@ AOS.init();
 //contact submit operation
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    alert("Message sent! (This is a placeholder, integrate a backend later.)");
+    alert("Thank you for contacting. Will get back to you soon!!");
+    
 });
 
 
