@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Portfolio Loaded!");
 });
 
+
+
 //smooth animation
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
